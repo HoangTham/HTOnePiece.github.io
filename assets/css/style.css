@@ -1,0 +1,361 @@
+/* Reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #cab9cd;
+    scroll-behavior: smooth;
+}
+#main.scroller{
+    background-color: aliceblue !important;
+    transition: background-color 200ms linear;
+}
+.btn{
+    width: 100%;
+    background-color: lavender;
+    color: lightcoral;
+    text-align: center;
+    margin: auto;
+    height: 40px;
+    cursor: pointer;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+#main {
+    overflow: hidden;
+}
+#header {
+    height: 46px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* text-align: center; */
+    z-index: 1;
+    background-color: rgba(0, 18, 118, 0.7);
+    /* background-color: aquamarine; */
+}
+
+#header .header_logo{
+    max-height: 90px;
+    width: auto;
+    margin: auto;
+
+}
+#nav, .subnav{
+    list-style-type: none;
+    text-align: left;
+}
+#nav > li{
+    display: inline-block;
+}
+#nav li{
+    /* display: inline-block; */
+    position: relative;
+}
+#nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+    
+}
+#nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    display: block;
+    padding: 0 24px;
+}
+#nav > li:hover > a,
+#nav .subnav li:hover a{
+    color: #a621d1;
+    background-color: white;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav {
+    display: inline-block;
+}
+#nav .subnav{
+    display: none;
+    min-width: 160px;
+    top: 100%;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a{
+    color: #000;
+    padding:0 12px;
+    line-height: 38px;
+}
+#nav .nav-arrow-down{
+    font-size: 14px;
+}
+
+#header .mobile-menu-btn,
+#header .search-btn{
+    float: right;
+    padding: 0 21px;
+}
+
+#header .mobile-menu-btn,
+#header .search-icon{
+    color: #fff;
+    font-size: 21px;
+    line-height: 46px;
+}
+#header .search-btn:hover{
+    background-color: rgb(241, 110, 34);
+    cursor: pointer;
+}
+#header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#slider {
+    position: relative;
+    margin-top: 45px;
+    padding-top: 45%;
+    background: url(https://toigingiuvedep.vn/wp-content/uploads/2021/06/hinh-nen-one-piece-4k-1.jpg) top center / cover no-repeat;
+}
+
+.slider__text {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    text-shadow: 0 0 1px #000;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    text-align: center;
+}
+.slider__text-heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+.slider__text-description {
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 16px;
+}
+#container {
+
+}
+#container .content-section{
+    width: 900px;
+    max-width: 100%;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#container .section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+#container .section-sub-heading{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+    font-style: italic;
+    opacity: 0.6;
+}
+#container .detail-text{
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 1.6;
+}
+#container .member-list{
+    margin-top: 48px;
+    display: flex;
+    overflow: hidden;
+}
+#container .member-item{
+    width: 33.3333%;
+    text-align: center;
+    /* float: left; -> overflow:hidden trong member-list*/
+}
+#container .member-name{
+    font-size: 15px;
+    
+}
+#container .member-img{
+    margin-top: 15px;
+    width: 180px;
+    height: 260px;
+    border-radius: 2px;
+}
+
+/* Dich vu */
+/* .text-white{
+    color: #fff !important; 
+} */
+.tour-section{
+    background-color: rgb(211, 143, 143);
+    display: flex;
+}
+.tickets-list{
+    background-color: #ca54df;
+    margin-top: 39px;
+    list-style: none;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.tickets-list li{
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ccc;
+    color: aqua;
+}
+.tickets-list .sold-out{
+    color: #ef5757;
+    background-color: beige;
+    padding: 3px 4px;
+    margin-left: 16px;
+    float: right;
+}
+.tickets-list .quantity{
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: blue;
+    color: #000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+
+/* Place */
+.place-list {
+    margin: 32px -8px 32px;
+    display: flex;
+}
+.place-item {
+    float: left;
+    width: 33.3333%;
+    padding: 0 8px;
+}
+.place-img {
+    width: 100%;
+    height: 180px;
+    display: block;
+}
+.place-img:hover{
+    opacity: 0.6;
+}
+.place-body {
+    font-size: 15px;
+    padding: 16px;
+    background-color: #fff;
+}
+.place-heading {
+    font-size: 15px;
+}
+.place-time {
+    margin-top: 15px;
+    color: #757575;
+}
+.place-desc {
+    margin-top: 15px;
+    line-height: 1.4;
+}
+.place-buy-btn {
+    color: #fff;
+    background-color: blue;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+}
+.place-buy-btn:hover {
+    color: blueviolet;
+    background-color: coral;
+}
+/* Lien hệ */
+.section-content{
+    display: flex;
+    color: black;
+    margin: 30px 8px;
+}
+
+.contact-info{
+
+}
+.contact-info p{
+    padding: 8px 2px;
+}
+.contact-info p i{
+    top:-1px;
+    margin: 0 4px;
+}
+.contact-email{
+    padding: 4px 8px;
+}
+.email-title {
+    font-size: 1.2rem;
+}
+.email-body {
+    padding: 16px 16px;
+}
+.email-box {
+    height: 38px;
+    width: 230px;
+    border-radius: 2px;
+    border: 2px solid #fff;
+    font-size: 16px;
+}
+.email-box:hover{
+    border: 1px solid #ca54df;
+}
+.btn-submit{
+    width: 100px;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    font-size: 16px;
+}
+.btn:hover{
+    opacity: 0.7;
+    color: #000;
+}
+.content-map{
+    text-align: center;
+}
+.content-map img{
+    width: 90%;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+.socials-list{
+    text-decoration: none;
+}
+.socials-list a{
+    text-decoration: none;
+    color: #000;
+}
+#footer p{
+    margin-top: 16px;
+}

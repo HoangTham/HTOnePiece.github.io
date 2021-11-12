@@ -1,0 +1,70 @@
+/* MPC */
+/* @media (min-width: 741px){
+    
+    #header .search-btn{
+        display: block;
+    }
+    .mobile-menu-btn{
+        display: none;
+    }
+} */
+/* Mobile */
+@media (max-width: 46.1875em){
+    #header{
+        overflow: hidden;
+    }
+    #header .search-btn{
+        display: none;
+    }
+    #header .mobile-menu-btn{
+        display: block;
+    }
+    #nav{
+        display: block;
+    }
+    #nav >li{
+        display: block;
+        padding-left: 0;
+    }
+    #nav >li:first-child{
+        display: inline-block;
+    }
+    #nav .subnav{
+        position: initial;
+        background-color: rgb(218, 110, 39);
+    }
+    #nav .subnav a{
+        color: #fff;
+        padding: 0 41px;
+    }
+    #container .member-list{
+        display: initial;
+    }
+    #container .member-mobile{
+        width: 100%;
+        margin-top: 30px;
+    }
+    #container .member-img{
+        width: 60%;
+    }
+    #container .place-list{
+        display: initial;
+    }
+    #container .s-col-full{
+        width: 100%;
+        font-size: 4;
+    }
+    #Contact .section-content{
+        display: initial;
+    }
+    #Contact .contact-info{
+        margin-bottom: 20px;
+    }
+    .email-box{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .btn-submit{
+        width: 100%;
+    }
+}
